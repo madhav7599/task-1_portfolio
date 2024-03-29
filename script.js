@@ -42,9 +42,13 @@ buttons.forEach((button, index) => {
 
 // portfolio fillter 
 
-var mixer = mixitup('.portfolio-gallery',{
+var mixer = mixitup('.demon-main',{
+    load: {
+        filter: '.project'
+    },
     selectors: {
-        target: '.portfolio-box'
+        target: '.demon'
+        
     },
     animation: {
         duration: 500
