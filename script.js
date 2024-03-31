@@ -1,4 +1,4 @@
-// active hamburger menu 
+
 let menuIcon = document.querySelector(".menu-icon");
 let navlist = document.querySelector(".navlist")
 menuIcon.addEventListener("click",()=>{
@@ -7,7 +7,6 @@ menuIcon.addEventListener("click",()=>{
     document.body.classList.toggle("open");
 });
 
-// remove navlist
 navlist.addEventListener("click",()=>{
     navlist.classList.remove("active");
     menuIcon.classList.remove("active");
@@ -16,7 +15,6 @@ navlist.addEventListener("click",()=>{
 
 
 
-// rotate text js code 
 let text = document.querySelector(".text p");
 
 text.innerHTML = text.innerHTML.split("").map((char,i)=>
@@ -24,7 +22,7 @@ text.innerHTML = text.innerHTML.split("").map((char,i)=>
 ).join("");
 
 
-// switch between about buttons 
+
 
 const buttons = document.querySelectorAll('.about-btn button');
 const contents = document.querySelectorAll('.content');
@@ -40,7 +38,7 @@ buttons.forEach((button, index) => {
 
 
 
-// portfolio fillter 
+
 
 var mixer = mixitup('.demon-main',{
     load: {
@@ -56,7 +54,7 @@ var mixer = mixitup('.demon-main',{
 });
 
 
-// Initialize swiperjs 
+
 
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
@@ -84,7 +82,6 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-//   skill Progress bar 
 
 const first_skill = document.querySelector(".skill:first-child");
 const sk_counters = document.querySelectorAll(".counter span");
@@ -134,7 +131,7 @@ function skillsCounter(){
 }
 
 
-// side progress bar 
+
 
 let calcScrollValue = ()=>{
     let scrollProgress = document.getElementById("progress");
@@ -160,7 +157,7 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 
-// active menu 
+
 
 let menuLi = document.querySelectorAll("header ul li a");
 let section = document.querySelectorAll('section');
@@ -174,13 +171,13 @@ function activeMenu(){
 activeMenu();
 window.addEventListener("scroll",activeMenu);
 
-// scroll reveal
+
 
 ScrollReveal({ 
     distance:"90px",
     duration:2000,
     delay:200,
-    // reset: true ,
+ 
 });
 
 
